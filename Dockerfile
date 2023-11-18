@@ -9,6 +9,8 @@ WORKDIR /springbootvuejs
 # Just echo so we can see, if everything is there :)
 RUN ls -l
 
+RUN mvn --version
+
 # Run Maven build
 RUN mvn clean install
 
